@@ -1,0 +1,90 @@
+body {
+    background-image: url(cafe.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color:hsl(36, 27%, 31%);
+    height: 100vh;
+    display: flex;
+    }
+
+.container {
+        background-color:rgba(78, 76, 74, 0.7);
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        min-width: 50%;
+        border-radius: 40px;
+        color: white;
+        margin:auto auto;
+}
+
+form {
+    display:flex;
+    flex-direction:column;
+    font-family: 'IBM Plex Sans', sans-serif;
+    margin:20px;
+    padding:20px;
+}
+
+h1 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    color:pink;
+    align-self: center;
+}
+
+input {
+    font-family: 'IBM Plex Sans', sans-serif;
+    padding:5px;
+}
+
+#addTip {
+    background-color:#78DEC7;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+#calculate {
+    background-color: pink;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+#tip {
+    font-family: 'IBM Plex Sans', sans-serif;
+    display:none;
+}
+
+#amountTotal {
+    display: flex;
+    flex-direction: row;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color:white;
+    padding:15px;
+    justify-content: space-around;
+    text-align: center;
+
+}
+
+h4{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#billSplit, #totalTip, #totalBill {
+    background-color:#8db3c2;
+    padding: 20px;
+    border-radius: 10px;
+    border: solid black 1px;
+}
+
+@media only screen and (max-device-width: 820px) {
+    .container {
+        min-width: 70%;
+    }
+}
